@@ -226,8 +226,13 @@
   <section class="section-slide">
     <div class="wrap-slick1">
       <div class="slick1">
-        <div class="item-slick1 item1-slick1" style="background-image: url(images/slide1-01.png)">
-          <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+        <div class="item-slick1 item1-slick1" style="position: relative; overflow: hidden;">
+          <video autoplay muted loop playsinline
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; filter: blur(6px) brightness(0.7); transform: scale(1.05);">
+            <source src="images/n-videos/konum1.mp4" type="video/mp4" />
+          </video>
+          <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170"
+            style="position: relative; z-index: 1;">
             <style>
               @media (max-width: 500px) {
                 .header-logo-img {
@@ -325,7 +330,7 @@
   <!-- Intro -->
   <section class="section-intro">
     <div class="header-intro parallax100 t-center p-t-135 p-b-200"
-      style="background-image: url(images/bg-intro-01.png)">
+      style="background-image: url(images/n-images/longimg.jpg)">
       <!-- <span class="tit2 p-l-15 p-r-15"> Discover </span>
 
         <h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">Konum Et</h3> -->
@@ -333,12 +338,19 @@
 
     <div class="content-intro bg-white p-t-77 p-b-100">
       <div class="container">
+        <style>
+          .intro-card-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+          }
+        </style>
         <div class="row">
           <div class="col-md-4 p-t-30">
             <!-- Block1 -->
             <div class="blo1">
               <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-                <a><img src="images/blog-cards-01.png" alt="IMG-INTRO" /></a>
+                <a><img class="intro-card-img" src="images/n-images/atmosphere.jpg" alt="IMG-INTRO" /></a>
               </div>
 
               <div class="wrap-text-blo1 p-t-35">
@@ -362,7 +374,7 @@
             <!-- Block1 -->
             <div class="blo1">
               <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-                <a><img src="images/blog-cards-02.png" alt="IMG-INTRO" /></a>
+                <a><img class="intro-card-img" src="images/n-images/fresh.jpg" alt="IMG-INTRO" /></a>
               </div>
 
               <div class="wrap-text-blo1 p-t-35">
@@ -387,7 +399,7 @@
             <!-- Block1 -->
             <div class="blo1">
               <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-                <a><img src="images/blog-cards-03.png" alt="IMG-INTRO" /></a>
+                <a><img class="intro-card-img" src="images/n-images/stylishambience2.jpg" alt="IMG-INTRO" /></a>
               </div>
 
               <div class="wrap-text-blo1 p-t-35">
@@ -419,7 +431,7 @@
         <!-- Left image -->
         <div class="col-md-4">
           <div class="item-ourmenu bo-rad-10 hov-img-zoom gallery-card">
-            <img src="images/gallerie-1.png" alt="Konum Et Galerie 1" />
+            <img src="images/n-images/img1.jpg" alt="Konum Et Galerie 1" />
           </div>
         </div>
 
@@ -435,7 +447,7 @@
         <!-- Right image -->
         <div class="col-md-4">
           <div class="item-ourmenu bo-rad-10 hov-img-zoom gallery-card">
-            <img src="images/gallerie-3.png" alt="Konum Et Galerie 3" />
+            <img src="images/n-images/img3.jpg" alt="Konum Et Galerie 3" />
           </div>
         </div>
       </div>
@@ -693,7 +705,7 @@
 
         <div class="col-lg-6 p-b-30 p-t-18">
           <div class="wrap-pic-booking size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-            <img src="images/booking-01.jpg" alt="IMG-OUR" />
+            <img src="images/n-images/bookatable.jpg" alt="IMG-OUR" />
           </div>
         </div>
       </div>
