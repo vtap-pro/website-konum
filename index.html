@@ -228,7 +228,7 @@
       <div class="slick1">
         <div class="item-slick1 item1-slick1" style="position: relative; overflow: hidden;">
           <video autoplay muted loop playsinline
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; filter: blur(6px) brightness(0.7); transform: scale(1.05);">
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; filter: blur(2px) brightness(0.7); transform: scale(1.05);">
             <source src="images/n-videos/konum1.mp4" type="video/mp4" />
           </video>
           <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170"
@@ -712,13 +712,55 @@
     </div>
   </section>
 
+  <!-- Location & Map -->
+  <section class="section-map p-t-100 p-b-110">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="t-center m-b-50">
+            <span class="tit2 t-center"> Anfahrt </span>
+            <h3 class="tit3 t-center m-t-2">Besuchen Sie uns</h3>
+          </div>
+
+          <div class="wrap-map bo-rad-10 overflow-hidden"
+            style="height: 450px; box-shadow: 0 15px 45px rgba(0,0,0,0.15);">
+            <iframe
+              src="https://maps.google.com/maps?q=Konum%20Et%20Sinzig%20K%C3%B6lner%20Str.%206&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <div class="t-center p-t-40">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Kölner+Str.+6,+53489+Sinzig" target="_blank"
+              class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+              <i class="fa fa-map-marker m-r-10" aria-hidden="true"></i>
+              Route planen
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Video -->
-  <section class="section-video parallax100" style="background-image: url(images/video-bg.png); background-size: cover">
-    <div class="content-video t-center p-t-225 p-b-250">
-      <h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">Unser Video</h3>
+  <section class="section-video" style="position: relative; overflow: hidden; background-color: #000;">
+    <!-- Cinematic Background Video -->
+    <video autoplay muted loop playsinline
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; filter: blur(3px) brightness(0.5); transform: scale(1.05);">
+      <source src="images/n-videos/konum2.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Dark Overlay for Premium Feel -->
+    <div
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); z-index: 1;">
+    </div>
+
+    <div class="content-video t-center p-t-225 p-b-250" style="position: relative; z-index: 2;">
+      <h3 class="tit4 t-center p-l-15 p-r-15 p-t-3" style="text-shadow: 0 4px 15px rgba(0,0,0,0.5);">Unser Video</h3>
 
       <div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal"
-        data-target="#modal-video-01">
+        data-target="#modal-video-01" style="box-shadow: 0 10px 30px rgba(0,0,0,0.4); border-radius: 50%;">
         <div class="flex-c-m sizefull bo-cir bgwhite color1 hov1 trans-0-4">
           <i class="fa fa-play fs-18 m-l-2" aria-hidden="true"></i>
         </div>
@@ -868,7 +910,10 @@
           <ul class="m-b-70">
             <li class="txt14 m-b-14">
               <i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
-              Kölner Str. 6, 53489 Sinzig
+              <a href="https://www.google.com/maps/search/?api=1&query=Kölner+Str.+6,+53489+Sinzig" target="_blank"
+                style="color: inherit;">
+                Kölner Str. 6, 53489 Sinzig
+              </a>
             </li>
 
             <li class="txt14 m-b-14">
@@ -1084,7 +1129,7 @@
       <div class="wrap-video-mo-01">
         <div class="video-mo-01">
           <video controls autoplay muted loop style="width: 100%; height: auto">
-            <source src="./images/steak-video.mp4" type="video/mp4" />
+            <source src="images/n-videos/konum2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -1131,8 +1176,11 @@
         <p>
           <strong>Konum Et Restaurant</strong><br />
           Inhaberin: Eda Akyüz<br />
-          Kölnerstraße 6<br />
-          53489 Sinzig<br />
+          <a href="https://www.google.com/maps/search/?api=1&query=Kölner+Str.+6,+53489+Sinzig" target="_blank"
+            style="color: inherit;">
+            Kölnerstraße 6<br />
+            53489 Sinzig
+          </a><br />
           Deutschland
         </p>
 
